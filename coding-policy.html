@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>kocode</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- favicon -->
+  <link rel="icon" href="../img/k-logo.ico" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+  <!-- External file -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400|M+PLUS+1p:100,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+</head>
+
+<!-- html -->
+<body class="cp-page" ontouchstart="">
+  <a href="index.html" class="k-logo"><img src="../img/k-logo2_animated.svg" alt="logo" /></a>
+  <section id="coding-policy">
+    <div class="coding-policy-container">
+      <h2 class="title"><img src="../img/coding-policy_animated.svg"></h2>
+      <div class="row">
+        <div class="policy-box p-box1 col-sm-6">
+          <h3 class="txtm policy-titile">HTML</h3>
+          <ul class="txtxs">
+            <li>・HTML5にて記述します。</li>
+            <li>・印刷は環境に依存するため、原則考慮しません。</li>
+            <li>・Bootstrap等のフレームワークを使用する場合があります。</li>
+            <li>・文法に注意し、第三者に見やすいコードを心がけます。</li>
+          </ul>
+        </div>
+        <div class="policy-box p-box2 col-sm-6">
+          <h3 class="txtm policy-titile">CSS</h3>
+          <ul class="txtxs">
+            <li>・SCSSを用いて記述します。</li>
+            <li>・印刷は環境に依存するため、原則考慮しません。</li>
+            <li>・基本的にrem単位を用います。</li>
+            <li>・文法に注意し、第三者に見やすいコードを心がけます。</li>
+          </ul>
+        </div>
+        <div class="policy-box p-box3 col-sm-6">
+          <h3 class="txtm policy-titile2">Java Script</h3>
+          <ul class="txtxs">
+            <li>・jQueryとプラグインを主に使用します。</li>
+            <li>・jQueryが無効となるブラウザは考慮致しません。</li>
+            <li>・文法に注意し、第三者に見やすいコードを心がけます。</li>
+          </ul>
+        </div>
+        <div class="policy-box p-box4 col-sm-6">
+          <h3 class="txtm policy-titile3">Quality Control</h3>
+          <ul class="txtxs qc">
+            <li>・クロスブラウザ対応、W3C準拠をチェック後納品致します。</li>
+            <li>・IE以外は製作時の最新バージョンに準拠します。</li>
+            <li>・IE 10~11対応で、IE9以下のバージョン対応は考慮しません。</li>
+            <li>・iPhone実機にてレスポンシブ対応の確認をします。</li>
+            <li>・Androidはエミュレータでレスポンシブ対応の確認をします。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <img src="../img/logo.svg" alt="logo" class="foot-logo">
+    <p class="txtxs"><img src="../img/k-logo.svg" alt="k-logo">COPYLIGHT&copy;Kocode</p>
+  </footer>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="kocode-sub.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+    var mySwiper = new Swiper(".swiper-container", {
+      // ここからオプション
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      effect: "coverflow",
+      speed: 500,
+      pagination: {
+        el: ".swiper-pagination"
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar"
+      },
+      breakpoints: {
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+          centeredSlides: true
+        }
+      }
+    });
+  </script>
+</body>
+</html>
