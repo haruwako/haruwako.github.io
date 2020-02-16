@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="145.816" height="148.334" viewBox="0 0 145.816 148.334">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #000;
+      }
+
+      .cls-1 {
+        stroke-width: 2.5px;
+      }
+
+      .cls-3 {
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="k-logo" transform="translate(-72.903 -55.154)">
+    <path id="パス_1" data-name="パス 1" class="cls-1" d="M211.875,274.425V419.644H355.19V273.815Z" transform="translate(-137.722 -217.405)"/>
+    <path id="パス_2" data-name="パス 2" class="cls-2" d="M218.889,280.928V413.412H348.922V280.928Z" transform="translate(-138 -217)"/>
+    <path id="パス_3" data-name="パス 3" class="cls-3" d="M245.048,301.62h27.571" transform="translate(-138 -217)"/>
+    <path id="パス_4" data-name="パス 4" class="cls-3" d="M258.833,303.477v82.569" transform="translate(-138 -217)"/>
+    <path id="パス_5" data-name="パス 5" class="cls-3" d="M245.048,387.95h27.541" transform="translate(-138 -217)"/>
+    <path id="パス_6" data-name="パス 6" class="cls-3" d="M294.655,301.62h29.282" transform="translate(-138 -217)"/>
+    <path id="パス_7" data-name="パス 7" class="cls-3" d="M311.8,301.58l-52.716,57.155" transform="translate(-138 -217)"/>
+    <path id="パス_8" data-name="パス 8" class="cls-3" d="M278.816,338.363l35.063,48.558" transform="translate(-138 -217)"/>
+    <path id="パス_9" data-name="パス 9" class="cls-3" d="M299.32,387.95h28.24" transform="translate(-138 -217)"/>
+  </g>
+</svg>
