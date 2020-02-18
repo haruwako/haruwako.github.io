@@ -1,3 +1,10 @@
+$('<img src="../img/aboutme_animated.svg">');
+$('<img src="../img/namebar_animated.svg">');
+$('<img src="../img/service_animated.svg">');
+$('<img src="../img/works_animated.svg">');
+$('<img src="../img/contact_animated.svg">');
+
+
 $(window).on('load scroll', function () {
   add_class_in_scrolling($('.svg-title1'));
   add_class_in_scrolling($('.svg-namebar'));
@@ -21,7 +28,6 @@ function add_class_in_scrolling(target) {
     $('.svg-title3.start').attr('src', '../img/works_animated.svg');
     $('.svg-title4.start').attr('src', '../img/contact_animated.svg');
     target.removeClass('hide');
-
   }
 
 }
