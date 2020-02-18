@@ -14,14 +14,14 @@ function add_class_in_scrolling(target) {
   target.addClass('hide');
   if (target.offset().top < scrollPos) {
     target.addClass('start');
-    target.removeClass('hide');
-
 
     $('.svg-title1.start').attr('src', '../img/aboutme_animated.svg');
     $('.svg-namebar.start').attr('src', '../img/namebar_animated.svg');
     $('.svg-title2.start').attr('src', '../img/service_animated.svg');
     $('.svg-title3.start').attr('src', '../img/works_animated.svg');
     $('.svg-title4.start').attr('src', '../img/contact_animated.svg');
+    target.removeClass('hide');
+
   }
 
 }
@@ -48,7 +48,7 @@ $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     var wHeight = $(window).height();
 
-    if (scroll > hit - wHeight + wHeight / 100) {
+    if (scroll > hit - wHeight - wHeight / 1000) {
       $(this).addClass("isAnimate");
     }
   });
