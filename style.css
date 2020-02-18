@@ -243,6 +243,15 @@ a.orange-btn:hover::before {
   transition-delay: .1s;
 }
 
+.elem,
+.hide {
+  visibility: hidden;
+}
+
+.elem.isAnimate {
+  visibility: visible;
+}
+
 .elem.isAnimate.fadein-down {
   -webkit-animation-name: fadein-down;
   animation-name: fadein-down;
