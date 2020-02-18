@@ -11,9 +11,11 @@ function add_class_in_scrolling(target) {
   var winScroll = $(window).scrollTop();
   var winHeight = $(window).height();
   var scrollPos = winScroll + winHeight;
-
+  target.addClass('hide');
   if (target.offset().top < scrollPos) {
     target.addClass('start');
+    target.removeClass('hide');
+
 
     $('.svg-title1.start').attr('src', '../img/aboutme_animated.svg');
     $('.svg-namebar.start').attr('src', '../img/namebar_animated.svg');
@@ -46,7 +48,7 @@ $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     var wHeight = $(window).height();
 
-    if (scroll > hit - wHeight - wHeight / 30) {
+    if (scroll > hit - wHeight - wHeight / 1000) {
       $(this).addClass("isAnimate");
     }
   });
