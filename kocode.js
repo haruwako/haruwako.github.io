@@ -44,7 +44,7 @@ $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     var wHeight = $(window).height();
 
-    if (scroll > hit - wHeight - wHeight / 5) {
+    if (scroll > hit - wHeight - wHeight) {
       $(this).addClass("isAnimate");
     }
   });
