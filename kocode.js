@@ -24,19 +24,30 @@ function add_class_in_scrolling(target) {
 
 }
 
-$(window).on('scroll', function () {
+// $(window).on('scroll', function () {
 
-  var elem = $('.elem');
-  var isAnimate = 'isAnimate';
+//   var elem = $('.elem');
+//   var isAnimate = 'isAnimate';
 
-  elem.each(function () {
+//   elem.each(function () {
 
-    var elemOffset = $(this).offset().top;
-    var scrollPos = $(window).scrollTop();
-    var wh = $(window).height();
+//     var elemOffset = $(this).offset().top;
+//     var scrollPos = $(window).scrollTop();
+//     var wh = $(window).height();
 
-    if (scrollPos > elemOffset - wh) {
-      $(this).addClass(isAnimate);
+//     if (scrollPos > elemOffset - wh) {
+//       $(this).addClass(isAnimate);
+//     }
+//   });
+// });
+$(window).scroll(function () {
+  $(".elem").each(function () {
+    var hit = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var wHeight = $(window).height();
+
+    if (scroll > hit - wHeight + wHeight / 100) {
+      $(this).addClass("isAnimate");
     }
   });
 });
