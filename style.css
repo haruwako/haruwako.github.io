@@ -659,7 +659,7 @@ body .backprint {
 }
 
 body .backprint p.backVerdures {
-  color: rgba(0, 41, 3, 0.1);
+  color: #002903;
   font-weight: bold;
   font-size: 9rem;
   font-family: "Roboto Slab", serif;
@@ -891,6 +891,11 @@ body #aboutUs .events .viewMoreContainer .closeButton {
 body #aboutUs .events .viewMoreContainer .closeButton:hover {
   box-shadow: #000 0 0px 0px 40px inset;
   color: #fff;
+}
+
+body #aboutUs .btnWrapper {
+  position: relative;
+  z-index: 20;
 }
 
 body #contact {
