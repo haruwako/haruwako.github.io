@@ -659,7 +659,7 @@ body .backprint {
 }
 
 body .backprint p.backVerdures {
-  color: #002903;
+  color: rgba(0, 41, 3, 0.1);
   font-weight: bold;
   font-size: 9rem;
   font-family: "Roboto Slab", serif;
