@@ -216,6 +216,7 @@ body #news .newsBox .newsContent p.newsDetail {
 
 body #schedule {
   position: relative;
+  overflow: hidden;
   padding-top: 5vw;
   padding-bottom: 15vw;
   background-color: #fff;
@@ -484,7 +485,6 @@ body #schedule .introText p {
 body #schedule .sns {
   position: relative;
   z-index: 2;
-  margin-right: 3rem;
   text-align: right;
 }
 
@@ -574,7 +574,7 @@ body .wrapper {
 
 body .pace {
   position: fixed;
-  top: 18%;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -595,7 +595,7 @@ body .pace {
 body .pace .pace-progress {
   position: fixed;
   position: absolute;
-  top: 18%;
+  top: 0;
   right: 100%;
   z-index: 2000;
   display: block;
@@ -620,8 +620,8 @@ body .pace.pace-inactive {
 }
 
 body .loadLogo img {
-  position: absolute;
-  top: 28%;
+  position: fixed;
+  top: 20%;
   right: 0;
   left: 0;
   z-index: 110;
@@ -652,7 +652,7 @@ body .sectionTitile::before {
 body .backprint {
   position: fixed;
   top: 40rem;
-  right: -20rem;
+  right: -15rem;
   z-index: 1;
   transform: rotate(90deg);
   transform-origin: 100 0;
@@ -794,9 +794,20 @@ body #aboutUs .events .viewMore .viewMoreButton {
   margin: 0 auto;
   margin-bottom: 4rem;
   width: 50%;
-  border: 1px solid #000;
+  box-shadow: #000 0 0px 0px 1px inset;
+  color: #000;
   line-height: 3rem;
   cursor: pointer;
+  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+}
+
+body #aboutUs .events .viewMore .viewMoreButton:hover {
+  box-shadow: #000 0 0px 0px 40px inset;
+  color: #fff;
 }
 
 body #aboutUs .events .viewMoreContainer {
@@ -864,16 +875,27 @@ body #aboutUs .events .viewMoreContainer .eventsBox .eventsImg::after {
 body #aboutUs .events .viewMoreContainer .closeButton {
   position: relative;
   margin: 0 auto;
-  margin-top: -2rem;
   margin-bottom: 4rem;
   width: 50%;
-  border: 1px solid #000;
+  box-shadow: #000 0 0px 0px 1px inset;
+  color: #000;
   line-height: 3rem;
   cursor: pointer;
+  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+}
+
+body #aboutUs .events .viewMoreContainer .closeButton:hover {
+  box-shadow: #000 0 0px 0px 40px inset;
+  color: #fff;
 }
 
 body #contact {
   position: relative;
+  overflow: hidden;
   background-color: #fff;
 }
 
@@ -899,7 +921,6 @@ body #contact p.contactText {
 body #contact .sns {
   position: relative;
   z-index: 2;
-  margin-right: 3rem;
   text-align: right;
 }
 
