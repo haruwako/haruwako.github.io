@@ -217,20 +217,20 @@ body #news .newsBox .newsContent p.newsDetail {
 body #schedule {
   position: relative;
   overflow: hidden;
-  padding-top: 5vw;
+  padding-top: 15vw;
   padding-bottom: 15vw;
   background-color: #fff;
 }
 
 body #schedule::before {
   position: absolute;
-  top: -10vw;
+  top: 0;
   left: 0;
   width: 0;
   height: 0;
   border-width: 10vw 0 0 100vw;
   border-style: solid;
-  border-color: transparent transparent transparent #fff;
+  border-color: #f8f8f8 transparent transparent transparent;
   content: "";
 }
 
@@ -895,19 +895,20 @@ body #aboutUs .events .viewMoreContainer .closeButton:hover {
 
 body #contact {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  padding-top: 15vw;
   background-color: #fff;
 }
 
 body #contact::before {
   position: absolute;
-  top: -10vw;
+  top: 0;
   left: 0;
   width: 0;
   height: 0;
   border-width: 10vw 0 0 100vw;
   border-style: solid;
-  border-color: transparent transparent transparent #fff;
+  border-color: #f8f8f8 transparent transparent transparent;
   content: "";
 }
 

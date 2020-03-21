@@ -50,3 +50,25 @@ $(window).on('load', function () {
   });
   $('.teamName').attr('src', '../img/verdures_animated.svg')
 });
+
+// ios ダブルタップでリンクバグ対応
+
+var userAgent = navigator.userAgent;
+var UA_iPhone = (userAgent.indexOf('iPhone') > -1) ? true : false;
+var UA_iPad = (userAgent.indexOf('iPad') > -1) ? true : false;
+$(function () {
+  if (UA_iPhone || UA_iPad) {
+    $('#gloval-navi a , #footer-navi a').bind("mouseover", function (ev) {
+      var link = $(this).attr("href");
+      var target = $(this).attr("target");
+      var linktype = link.substring(0, 1);
+      if (linktype != "#") {
+        if (target == "_blank") {
+          window.open(link);
+        } else {
+          location.href = link;
+        }
+      }
+    });
+  }
+});
