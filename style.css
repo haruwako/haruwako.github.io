@@ -151,8 +151,8 @@ body #top .details h3 a {
 
 body #top .details h3::before {
   position: absolute;
-  left: -133vw;
-  width: 132.5vw;
+  left: -33vw;
+  width: 32.5vw;
   height: 50%;
   border-bottom: 1px solid #000;
   content: "";
@@ -972,8 +972,8 @@ body .sectionTitile h2 {
 
 body .sectionTitile::before {
   position: absolute;
-  left: -17vw;
-  width: 16vw;
+  left: -27vw;
+  width: 26vw;
   height: 50%;
   border-bottom: 2px solid #000;
   content: "";
@@ -1171,6 +1171,8 @@ body .backprint p.backVerdures {
     font-size: calc(2rem + ((1vw - 0.64rem) * 2.1429));
   }
   html body section#top .details h3::before {
+    left: -133vw;
+    width: 132.5vw;
     border-bottom: 2px solid #000;
   }
   html body section#top .topTextbox p {
