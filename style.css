@@ -118,6 +118,8 @@ body #top::before {
   height: 20rem;
   background-color: #f8f8f8;
   content: "";
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
   transform: rotate(15deg);
 }
 
@@ -158,6 +160,7 @@ body #top .details h3::before {
 
 body #top .details h3:hover {
   margin-left: 7vw;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -548,6 +551,7 @@ body #aboutUs .imgSwiper .swiper-container .swiper-wrapper .swiper-slide img {
   margin: 0 auto;
   width: 100%;
   height: 20rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -645,18 +649,17 @@ body #aboutUs .events .viewMore .viewMoreButton {
   margin: 0 auto;
   margin-bottom: 4rem;
   width: 50%;
+  -webkit-box-shadow: #000 0 0px 0px 1px inset;
   box-shadow: #000 0 0px 0px 1px inset;
   color: #000;
   line-height: 3rem;
   cursor: pointer;
   -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
   transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
 }
 
 body #aboutUs .events .viewMore .viewMoreButton:hover {
+  -webkit-box-shadow: #000 0 0px 0px 40px inset;
   box-shadow: #000 0 0px 0px 40px inset;
   color: #fff;
 }
@@ -692,10 +695,12 @@ body #aboutUs .events .viewMoreContainer .eventsBox .eventsImg {
 body #aboutUs .events .viewMoreContainer .eventsBox .eventsImg img {
   width: 100%;
   height: 20rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 body #aboutUs .events .viewMoreContainer .eventsBox .eventsImg img.ri-guImg {
+  -o-object-position: 0% 50%;
   object-position: 0% 50%;
 }
 
@@ -728,18 +733,17 @@ body #aboutUs .events .viewMoreContainer .closeButton {
   margin: 0 auto;
   margin-bottom: 4rem;
   width: 50%;
+  -webkit-box-shadow: #000 0 0px 0px 1px inset;
   box-shadow: #000 0 0px 0px 1px inset;
   color: #000;
   line-height: 3rem;
   cursor: pointer;
   -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
   transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
 }
 
 body #aboutUs .events .viewMoreContainer .closeButton:hover {
+  -webkit-box-shadow: #000 0 0px 0px 40px inset;
   box-shadow: #000 0 0px 0px 40px inset;
   color: #fff;
 }
@@ -968,8 +972,8 @@ body .sectionTitile h2 {
 
 body .sectionTitile::before {
   position: absolute;
-  left: -117vw;
-  width: 116vw;
+  left: -17vw;
+  width: 16vw;
   height: 50%;
   border-bottom: 2px solid #000;
   content: "";
@@ -1132,6 +1136,10 @@ body .backprint p.backVerdures {
   }
   html body .loadLogo img {
     width: 20vw;
+  }
+  html body .sectionTitile::before {
+    left: -117vw;
+    width: 116vw;
   }
   html body section#top .logo img {
     width: 10vw;
