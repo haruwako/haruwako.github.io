@@ -22,7 +22,7 @@ body a {
 }
 
 body a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 body ul {
@@ -1416,6 +1416,13 @@ body.va-page {
 
 #view-all .deli .swiper-border {
   margin-top: 1rem;
+}
+
+#view-all .deli a {
+  display: block;
+  margin: 1rem auto;
+  width: 80%;
+  text-align: right;
 }
 
 #view-all .txtxs {
